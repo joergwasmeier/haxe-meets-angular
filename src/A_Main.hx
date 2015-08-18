@@ -1,25 +1,21 @@
 package ;
+import de.jw.amh.AngularApp;
 import angular.service.Scope;
-import angular.Angular;
 
-class A_Main {
+class A_Main extends AngularApp {
     /*
         Haxe start point
      */
     static function main() {
-        trace("Start");
-
         new A_Main();
     }
 
     public function new() {
+        super("myModule");
 
-        // App Controller
-        function appController(scope:Scope) {
-            scope.set("data", { appName : "Hallo Welt"});
-        };
+        AngularApp.registerController("AppController", function (scope:Scope) {
+            scope.set("data", { appName : "Hallo Welt 2"});
+        });
 
-        // App Module
-        var module = Angular.module("myModule", []).controller("AppController", appController);
     }
 }
