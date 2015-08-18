@@ -1,8 +1,8 @@
 package ;
 
+import de.jw.ham.directive.Price;
 import de.jw.ham.AppController;
 import de.jw.ham.lib.AngularApp;
-import angular.service.Scope;
 
 class A_Main extends AngularApp {
     /*
@@ -16,5 +16,7 @@ class A_Main extends AngularApp {
         super("myModule");
 
         AngularApp.registerController(new AppController());
+        AngularApp.registerDirective(new Price());
+
     }
 }
