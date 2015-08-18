@@ -17,6 +17,5 @@ class A_Main extends AngularApp {
 
         AngularApp.registerController(new AppController());
         AngularApp.registerDirective(new Price());
-
     }
 }

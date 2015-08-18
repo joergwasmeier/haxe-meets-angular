@@ -1,4 +1,15 @@
--cp src/
--js bin/release/main.js
+## JavaScript
 -main A_Main
 -lib angular.haxe
+-lib async-tests
+-cp src
+-js bin/release/main.js
+--next
+-main T_Main
+-lib angular.haxe
+-lib async-tests
+-lib utest
+-cp src
+-D nodejs
+-D test
+-js bin/release/test.js

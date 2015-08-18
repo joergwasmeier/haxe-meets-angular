@@ -1,4 +1,5 @@
 package de.jw.ham.directive;
+
 import de.jw.ham.lib.IAngularDirective;
 import de.jw.ham.lib.AngularDirective;
 

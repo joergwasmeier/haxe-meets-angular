@@ -15,22 +15,8 @@ class AngularApp {
 
     public static function registerDirective(directive:IAngularDirective):Void{
         module.directive(directive.name, function(){
-            trace(directive);
             return directive;
         });
-
-        /*
-        module.directive('price', function(){
-            return {
-                restrict:"E",
-                scope:{
-                    value: "="
-                },
-                template: '<span ng-show="value == 0">kostenlos</span>' +
-                '<span ng-show="value > 0">{{value | currency}}</span>'
-            };
-        });
-        */
     }
 
 
