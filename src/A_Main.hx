@@ -1,5 +1,6 @@
 package ;
 
+import de.jw.ham.AppController;
 import de.jw.ham.lib.AngularApp;
 import angular.service.Scope;
 
@@ -14,9 +15,6 @@ class A_Main extends AngularApp {
     public function new() {
         super("myModule");
 
-        AngularApp.registerController("AppController", function (scope:Scope) {
-            scope.set("data", { appName : "Hallo Welt 2"});
-        });
-
+        AngularApp.registerController(new AppController());
     }
 }

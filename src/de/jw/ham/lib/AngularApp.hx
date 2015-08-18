@@ -1,5 +1,4 @@
 package de.jw.ham.lib;
-import angular.service.Scope;
 import angular.Module;
 import angular.Angular;
 
@@ -9,10 +8,10 @@ class AngularApp {
     public function new(rootModuleName:String, ?dependencies:Array<Dynamic>) {
         module = Angular.module(rootModuleName, function(){});
     }
-
-    public static function registerController(controllerName:String, controllerFunction:Scope->Void):Void{
-        module.controller(controllerName, controllerFunction);
+    public static function registerController(controller:IAngularController):Void{
+        module.controller(controller.name, controller.initalState);
     }
+
 
     private function configFunction():Void {
         
