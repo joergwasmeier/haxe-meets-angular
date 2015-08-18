@@ -1,4 +1,4 @@
-package de.jw.amh;
+package de.jw.ham.lib;
 import angular.service.Scope;
 import angular.Module;
 import angular.Angular;

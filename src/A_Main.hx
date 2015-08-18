@@ -1,5 +1,6 @@
 package ;
-import de.jw.amh.AngularApp;
+
+import de.jw.ham.lib.AngularApp;
 import angular.service.Scope;
 
 class A_Main extends AngularApp {
